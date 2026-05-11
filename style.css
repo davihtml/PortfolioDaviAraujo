@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --branco: #F0EBE0;
+    --verde: #5C5C3D;
+    --verdeclaro: #D4C5A4;
+}
+
+
+.home{
+    background-color: var(--branco);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h1{
+        font-family: 'space grotesk', sans-serif;
+    }
+}
+
+.downdivhome{
+    display: flex;
+    justify-content: space-between;
+    gap: 650px;
+
+    margin-bottom: -200px;
+    
+
+    & p{
+        max-width: 300px;
+        text-align: start;
+        font-family: 'space mono', sans-serif;
+    }
+}
+
+.buttonsdivhome{
+    display: flex;
+    flex-direction: column;
+}
+
+.titlehome{
+    padding-bottom: 20px;
+    & h1{
+        font-size: 50px;
+    }
+}
+
+.funcionais{
+    margin-left: 260px;
+    opacity: 70%;
+}
+
+.pensadas{
+    margin-left: 232px;
+    opacity: 40%;
+}
+.bonitas{
+    margin-left: 190px;
+    opacity: 10%;
+}
+
+nav{
+    position: fixed;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--verde);
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 700px;
+
+    & h3{
+        color: var(--branco);
+        font-family: 'space grotesk', sans-serif;
+    }
+
+    & span{
+        color: var(--verdeclaro);
+    }
+
+
+    & li{
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        padding-right: 10px;
+
+        & a{
+            font-family: 'space grotesk', sans-serif;
+            color:  var(--branco);
+            outline: none;
+            text-decoration: none;
+        }
+    }
+}
+
+.buttonsdivhome{
+    display: flex;
+    gap: 10px;
+
+    & button{
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+    }
+}
